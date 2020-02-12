@@ -43,12 +43,11 @@ c2 {
   text-align: center;
   align-items: center;
   position: relative;
-  top: 35%;
-  transform: translateY(-50%);
 }
 
 .mack {
   width: 200px;
+  height: 200px;
   margin-bottom: 16;
 }
 
@@ -148,7 +147,48 @@ c2 {
       font-size: 32px !important;
     }
 
-    .about-body {
-      top: 45%;
+    /* .mobile-about-footer {
+      visibility: visible;
     }
+
+    .desktop-about-footer {
+      visibility: hidden;
+    } */
 }
+
+/* SAFARI BULLSHIT */
+
+.safari {
+  visibility: hidden;
+}
+
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    .row:before, .row:after {
+      display: flex !important;
+    }
+
+    .about-body {
+      margin-top: 50;
+    }
+
+    h1 {
+      font-size: 24px !important;
+    }
+
+    .brand-subtext {
+      font-size: 10px;
+    }
+
+    .safari {
+      visibility: visible;
+    }
+
+    .not-safari {
+      visibility: hidden;
+    }
+
+    .safari-margin {
+      margin-top: 150;
+    }
+}}
