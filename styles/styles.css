@@ -43,6 +43,7 @@ c2 {
   text-align: center;
   align-items: center;
   position: relative;
+  top: 20%;
 }
 
 .mack {
@@ -147,13 +148,9 @@ c2 {
       font-size: 32px !important;
     }
 
-    /* .mobile-about-footer {
-      visibility: visible;
+    .about-body {
+      top: 0%;
     }
-
-    .desktop-about-footer {
-      visibility: hidden;
-    } */
 }
 
 /* SAFARI BULLSHIT */
@@ -190,5 +187,9 @@ c2 {
 
     .safari-margin {
       margin-top: 150;
+    }
+
+    .about-body {
+      top: 0%;
     }
 }}
